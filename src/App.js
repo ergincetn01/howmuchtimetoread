@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import TextBox from "./Components/TextBox";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        const [text, setText]=useState("")
+        const handleChange=(e)=>{
+            setText(e.target.value)
+        }
+
+        const reset=()=>{
+            setText("")
+        }
+    return (
+        <div>
+            <TextBox handleChange={handleChange} text={text}/>
+            <button onClick={reset}>Reset text </button>
+       <p>Text: {text}</p>
+        Text len: {text.length}
+        </div>
+    )
+
 }
 
 export default App;
