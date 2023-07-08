@@ -1,4 +1,4 @@
-import "./Styles/Time.css"
+import "../Styles/Time.css"
 
 function Time({text}) {
 

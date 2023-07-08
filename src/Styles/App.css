@@ -1,0 +1,36 @@
+.app {
+    justify-content: center;
+    display: block;
+   margin: auto;
+   border: 2px solid gray;
+   width: 1000px;
+   
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    color:white;
+    background-color: green;
+    text-align: center;
+    border-color: green;
+    width: 1000px;
+}
+
+.btn:hover {
+    background-color: green;
+    -webkit-text-fill-color: white;
+    border-color: green;
+}
+
+.heads {
+    background-color: lightslategrey;
+}

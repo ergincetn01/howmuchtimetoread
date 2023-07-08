@@ -4,7 +4,7 @@
     border-width: 2px;
     color: white;
     width: 100%;
-    height: "500px";
+
 }
 .textArea::-webkit-input-placeholder {
     color: lightgray;
@@ -12,5 +12,7 @@
 .textArea:hover {
     background-color: black;
     color: white;
+    border-width: 2px;
     border-color: lightblue;
+    
 }
