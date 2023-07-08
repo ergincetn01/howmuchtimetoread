@@ -1,5 +1,5 @@
 import {Input} from "antd"
-import "./TextBox.css"
+import "./Styles/TextBox.css"
 
 const {TextArea} = Input;
 function TextBox({text,handleChange}){

@@ -1,11 +1,9 @@
 import { useState } from "react";
 import TextBox from "./Components/TextBox";
 import Time from "./Components/Time";
-import { Button, Layout } from "antd";
-import "./App.css"
+import { Button} from "antd";
+import "./Components/Styles/App.css"
 import NavBar from "./Components/NavBar";
-
-const { Content, Header, Footer } = Layout;
 
 function App() {
     const [text, setText] = useState("")
