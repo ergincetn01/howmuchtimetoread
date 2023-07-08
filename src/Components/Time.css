@@ -1,0 +1,13 @@
+.timerContainer {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.white {
+    color: white;
+}
+
+hr {
+    width: 200px;
+}

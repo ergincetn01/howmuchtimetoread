@@ -2,36 +2,33 @@ import { useState } from "react";
 import TextBox from "./Components/TextBox";
 import Time from "./Components/Time";
 import { Button, Layout } from "antd";
+import "./App.css"
+import NavBar from "./Components/NavBar";
 
-const {Content, Header, Footer}= Layout;
+const { Content, Header, Footer } = Layout;
 
 function App() {
-        const [text, setText]=useState("")
-        const handleChange=(e)=>{
-            setText(e.target.value)
-        }
+    const [text, setText] = useState("")
+    const handleChange = (e) => {
+        setText(e.target.value)
+    }
 
-        const reset=()=>{
-            setText("")
-        }
-        const ph="Enter some text..."
-
-        
+    const reset = () => {
+        setText("")
+    }
+    
     return (
-        <Layout>
-            <Content>
-                
-            <TextBox handleChange={handleChange} text={text}/>
-            <Button style={{backgroundColor: "black", color: "lightgreen", borderColor: "green", width: 1000, borderWidth: "3px"}} onClick={reset}>Clear text </Button>
-        <Time text={text} />
-       
-            </Content>
+   <div className="main">
 
-       
-        
-
-        
-        </Layout>
+   <NavBar/>
+                <div className="app">
+                    
+                    <TextBox handleChange={handleChange} text={text} />
+                    <Button className="btn" onClick={reset}>Clear Text </Button>
+                    <Time text={text} />
+                </div>
+</div>
+  
     )
 
 }

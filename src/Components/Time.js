@@ -1,4 +1,6 @@
 import { Col } from "antd";
+import "./Time.css"
+
 function Time({text}) {
 
     function getWordCount(str) {
@@ -6,7 +8,6 @@ function Time({text}) {
        var count= str.split(' ')
           .filter(function(n) { return n !== '' })
           .length;
-
         return count;
    }
 
@@ -32,12 +33,12 @@ function Time({text}) {
    }
 
    return (
-    <div>
-        <Col span={2}><p>Reading Time:<hr/> {getWordCount(text)===0 ? "0 seconds": estTime(text)} </p> 
-        </Col>
-        <Col span={2}><hr/></Col>
-        <Col span={2}><p>Total Word: <hr/> {getWordCount(text)}</p> 
-        </Col>
+    <div className="timerContainer">
+        <p className="white">Reading Time:<hr/> {getWordCount(text)===0 ? "0 seconds": estTime(text)} </p> 
+       
+        <hr/>
+       <p className="white">Total Word: <hr/> {getWordCount(text)}</p> 
+   
             
         
     </div>
