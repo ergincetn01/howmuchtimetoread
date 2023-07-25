@@ -31,10 +31,10 @@ function Time({text}) {
 
    return (
     <div className="timerContainer">
-        <p className="white">Reading Time:<hr/> {getWordCount(text)===0 ? "0 seconds": estTime(text)} </p> 
+        <p className="white">Reading Time<hr/> {getWordCount(text)===0 ? "0 seconds": estTime(text)} </p> 
        
         <hr/>
-       <p className="white">Total Words: <hr/> {getWordCount(text)}</p> 
+       <p className="white">Total Words<hr/> {getWordCount(text)}</p> 
  
     </div>
    )
