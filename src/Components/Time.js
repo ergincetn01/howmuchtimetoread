@@ -10,7 +10,7 @@ function Time({text}) {
    }
 
     function estTime(st) {
-        var timeEst = (getWordCount(st))/ (4)
+        var timeEst = (getWordCount(st))/ (3)
         if (getWordCount(text)===0){
             return;
         }
